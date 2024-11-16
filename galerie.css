@@ -1,0 +1,116 @@
+/* Arrière-plan de la page */
+body {
+    background-color: #f8bbd0; 
+    font-family: Arial, sans-serif;
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajoutez d'autres styles spécifiques à votre page, si nécessaire */
+
+/* Pour activer le défilement horizontal */
+.gallery-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* Style des éléments de la galerie */
+.gallery-item {
+    flex: 0 0 auto;
+    width: 220px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+/* Style de l'image */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les boutons et cases à cocher */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style pour le bouton "Supprimer" */
+button[type='submit'] {
+    background-color: #f44336; /* Rouge pour le bouton de suppression */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+    background-color: #d32f2f; /* Couleur plus sombre au survol */
+}
+
+/* Style pour le bouton "Sélectionner" */
+input[type="radio"] {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Améliorer la visibilité de la case à cocher */
+label input[type="radio"] + span {
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Ajouter un fond au label pour le rendre plus visible */
+label {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Style pour la zone de sélection avec case à cocher */
+.delete-selected-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style des boutons de navigation */
+.carousel-controls {
+    text-align: center;
+    margin: 10px 0;
+}
+
+button#prevBtn, button#nextBtn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button#prevBtn:hover, button#nextBtn:hover {
+    background-color: #3700b3;
+}
+
+button#prevBtn:focus, button#nextBtn:focus {
+    outline: none;
+}
